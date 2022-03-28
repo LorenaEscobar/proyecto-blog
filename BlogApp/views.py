@@ -5,13 +5,13 @@ def home(request):
 
 
 def servicios(request):
-    return HttpResponse("Servicios")
+    return render(request,"BlogApp/servicios.html")
 
 def tienda(request):
-    return HttpResponse("Tienda")
+   return HttpResponse("Tienda")
 
 def blog(request):
-    return HttpResponse("Blog")
+    return render(request, "BlogApp/blog.html")
 
 def contacto(request):
-    return HttpResponse("Contacto")
+    return render(request, "BlogApp/contacto.html")
